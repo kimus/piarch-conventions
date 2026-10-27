@@ -24,6 +24,7 @@ Free to restructure without a controller change: `README.md`, `AGENTS.md`, `CHAN
 Content obligations that do not change with layout:
 
 - Keep project-specific implementation decisions out of reusable defaults, and keep conditional obligations conditional: state what makes a rule apply rather than assuming it always applies. Compatibility and migration work is requested by a project, never assumed by an agent, until that project has published state outside its own working copy.
+- Where a rule makes the agent ask, name the moments and allow neither to be skipped: when the triggering change is detected during the work, and again at close before a pull request merges or an increment is accepted. Accepting a pull request is not a compatibility decision, and an unasked question is not answered.
 - The controller merges this source with a project's own instructions. Do not ask a project to copy these files, and do not rely on a project keeping a local copy current. Per-file project overrides are the supported extension mechanism.
 - Markdown is instruction, never enforcement, approval, or a sandbox. Prompt text cannot grant authorization, relax a controller gate, or claim an identity, a review, or evidence that did not occur.
 - No OpenSpec runtime, CLI, schema, or generated skill dependency, and no executable code in this repository: a consuming project runs its own single binary.
