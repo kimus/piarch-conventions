@@ -32,7 +32,7 @@ The author can draft responses and corrections. Only an actual independent revie
 
 Use the approved contract as the reference. Verify requirements through tests, observed output, approved visual references, or a repeatable manual procedure. Check failures and boundary conditions that matter to the increment.
 
-Record the command or procedure, input or fixture, expected result, actual result, and tested revision. For UI work, include relevant screenshots or other reviewable artifacts and the path to them. Keep credentials and personal data out of evidence.
+Record the command or procedure, input or fixture, expected result, actual result, and tested revision. For UI work, include relevant screenshots or other reviewable artifacts and the path to them. Keep credentials and personal data out of evidence. Where the owner authorized a phase without written records, state the same facts to the reviewer directly and name the revision reviewed; the reviewer must still learn what was not checked.
 
 Checked task boxes and an agent's confidence are not verification. A passed test covers only the behavior it checks. State limitations.
 

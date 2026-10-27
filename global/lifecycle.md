@@ -14,9 +14,9 @@ Capture the original request. Read existing evidence and selected conventions. R
 
 Use project-local change records for scope, review, actual authorization, verification evidence, and user decisions. No particular external workflow runtime is required. Only the controller's supported behavior may be claimed as enforced. An instruction or a named file is not proof of a transition.
 
-Implement only authorized scope. Record each criterion as PASS, FAIL, or NOT CHECKED with exact commands/fixtures, results, and tested revisions. For UI changes, retain terminal/screen evidence. Passing checks do not prove criteria that were not tested. Preserve interrupted or unknown outcomes; do not infer success or retry uncertain mutations blindly.
+Implement only authorized scope. Run the checks the contract names and report each criterion as PASS, FAIL, or NOT CHECKED with exact commands, fixtures, results, and tested revisions. For UI changes, retain terminal/screen evidence. A project may waive the written record with its owner's authorization, never the checks: report the same facts in the conversation and reconcile documents when the work is approved. Waiving the record never softens a statement about what was not tested. Passing checks do not prove criteria that were not tested. Preserve interrupted or unknown outcomes; do not infer success or retry uncertain mutations blindly.
 
-Obtain independent outcome review and actual user acceptance. Keep implementation approval, acceptance, publication, deployment, migration, and restore authorization distinct. Reconcile accepted specifications and retain provenance/history. Applied increments must not be silently rewritten. Record lessons and propose reusable convention improvements separately.
+Obtain independent outcome review and actual user acceptance. Keep implementation approval, acceptance, publication, deployment, migration, and restore authorization distinct. Reconcile accepted specifications and retain provenance/history. Applied increments must not be silently rewritten. Record lessons and propose reusable convention improvements separately, grouped into one reviewed source release rather than one release per lesson.
 
 ## Conversations and prompts
 

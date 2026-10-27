@@ -1,6 +1,10 @@
 # Migration rules
 
-Apply these rules to persistent schema, data, storage, and configuration migrations. Record project-specific tooling and procedures in `docs/operations.md`.
+Apply these rules only when the state a change touches exists outside that working copy in a form the project does not fully control: a published release, another user, a deployed database, shared configuration, or data another system reads. Record project-specific tooling and procedures in `docs/operations.md`.
+
+Where no such state exists, change the format directly. Do not add migration files, compatibility readers, expand-and-contract staging, or rollback rehearsal for state that exists only to be replaced. Ask the user before writing any of it, once per change, before implementation. Do not assume compatibility is wanted, and do not assume it is unwanted.
+
+When the state above does exist, the rules below apply in full and the same question is asked before implementation rather than answered by assumption.
 
 ## Required planning
 
