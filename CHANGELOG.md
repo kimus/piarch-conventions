@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0
+
+- Ideas and proposals carry a required `## Open Questions` section as their declared completeness state: one bullet per genuine question, or exactly `- none`. An absent or empty section is not completeness; the consuming controller refuses an idea revision that does not declare its state.
+- Idea review now treats an absent or empty `## Open Questions` section as a blocking finding and judges whether `- none` is honest.
+
 ## 0.2.0
 
 - Governance: one toolchain per project, no fetched code executed as a command, no copied shared instructions, and ranked ask points where a rule requires a question.
