@@ -10,7 +10,9 @@ During guided `piarch init`, select this GitHub repository or a local checkout. 
 
 Selecting a GitHub source during init explicitly fetches it into piarch's conventions cache. Local paths do not require Git. Review selected sources before trusting them. Conventions contain instructions, not permission to bypass controller controls.
 
-Piarch seeds `.piarch/prompts/roles/` and `.piarch/prompts/actions/` from this source. Missing known prompts receive built-in defaults. Existing project-local prompt files are never overwritten. Edit those local copies for project-specific behavior; propose reusable improvements here separately.
+Piarch reads prompts directly from the selected base source; init does not copy them. A user-created `.piarch/prompts/roles/<role>.md` or `.piarch/prompts/actions/<action>.md` overrides only that file. Missing files fall back to the base source, then to built-in defaults if the base lacks that prompt. An explicitly configured but unavailable base is an error, not a reason to ignore its rules. Existing local files are never removed or overwritten; earlier generated copies therefore continue to act as overrides until the owner chooses to remove them.
+
+The controller assembles selected `global/*.md`, the managed project's own instructions (not parent projects), and effective role/action prompts into model context. It records resolved source paths and hashes. Optional defaults are not sent until selected. Prompt symlinks are not required or created. Context is resolved for an operation/session; edits take effect in a fresh session. An updated base fingerprint must be reviewed and recorded with `piarch assess-conventions` before another agent operation. Review proposed shared changes separately from local overrides.
 
 Role prompts describe the agent's responsibilities. Action prompts describe a requested operation. Loading context is not a request to revise an artifact. An opened conversation must wait for a user instruction or an explicit choice to send a default action.
 

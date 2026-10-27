@@ -1,4 +1,12 @@
-# Initial-source verification
+# Source verification
+
+## Runtime-resolution correction
+
+The owner clarified that init must not copy prompts. Base prompts are now read directly, with optional user-created project overrides and built-in fallback for missing base files. The initial-copy behavior below is historical, not the current policy.
+
+Refine action defaults are explicit requests offered only by user choice, not always-on role context. The controller supplies resolved base rules and effective role instructions to agents, records paths/hashes, and keeps conversation startup idle until the user sends or confirms an action. The source remains independent of controller permissions and approval enforcement.
+
+## Initial publication checks
 
 The owner requested a separate `kimus/picarch-conventions` repository and explicitly chose public visibility. This authorizes the initial public source push, not a release tag, adoption by every consuming project, independent review, or implementation acceptance.
 
