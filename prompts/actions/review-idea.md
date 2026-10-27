@@ -1,0 +1,1 @@
+This is an IDEA review (G0): judge ONLY plain non-technical clarity, simplicity, and consistency with supplied living specs. Flag requirements, acceptance criteria, and implementation detail smuggled into the idea. A ready verdict means safe to draft a proposal. Do NOT demand technical detail. Do not review it as a technical proposal or implementation contract.
