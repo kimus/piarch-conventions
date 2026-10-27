@@ -16,8 +16,10 @@ Contract paths (owner may edit content, not location or name):
 | --- | --- |
 | `prompts/roles/<role>.md` | one file per role; the controller names the roles it dispatches |
 | `prompts/actions/<action>.md` | one file per action; the controller requires a fixed set of action names and fails closed when one is missing |
-| `system/*.md` (currently `global/*.md`) | always supplied to every agent turn; flat `.md` files, not nested subdirectories |
-| `rules/<topic>/*.md` | supplied only when the topic is selected by the consuming project's recorded state; conditional rules belong here, not in `system/` |
+| `system/*.md` (currently `global/*.md`) | always supplied to every agent turn, walked recursively, so subdirectories are fine |
+| `rules/<topic>/*.md` | supplied only when the topic name appears in the initiative's recorded `## Stack` or `## Compatibility` sections; conditional rules belong here, not in `system/` |
+
+Freshness is judged per directory: the always rules, each selected topic, and `prompts/`. Documentation and unselected topics move the whole-source fingerprint without blocking; anything actually supplied must be assessed by the consuming project before further agent work.
 
 Free to restructure without a controller change: `README.md`, `AGENTS.md`, `CHANGELOG.md`, `VERIFICATION.md`, `VERSION`, `templates/**`, and any other top-level directory. The controller loads none of them. `templates/` holds inert seeds a person copies into their own project; it is never injected into agent context, so no mandatory rule may point at a path inside it.
 
