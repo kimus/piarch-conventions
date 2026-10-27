@@ -1,4 +1,4 @@
-# PicArch conventions
+# PiArch conventions
 
 Reusable project conventions and editable agent role/action prompts for Piccolo Architect (`piarch`). This is an independent repository, not a folder or submodule inside piarch.
 
@@ -6,7 +6,7 @@ Status: initial draft. Publication does not establish independent review or appr
 
 ## Use from piarch
 
-During guided `piarch init`, select this GitHub repository or a local checkout. Scripted setup can pass `--conventions github/kimus/picarch-conventions` or `--conventions /path/to/picarch-conventions`.
+During guided `piarch init`, select this GitHub repository or a local checkout. Scripted setup can pass `--conventions github/kimus/piarch-conventions` or `--conventions /path/to/piarch-conventions`.
 
 Selecting a GitHub source during init explicitly fetches it into piarch's conventions cache. Local paths do not require Git. Review selected sources before trusting them. Conventions contain instructions, not permission to bypass controller controls.
 
