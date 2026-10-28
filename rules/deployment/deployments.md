@@ -1,5 +1,7 @@
 # Deployment rules
 
+*Conditional rule set (topic: deployment). Supplied when the initiative's recorded Stack or Compatibility section names it; when it applies and was not supplied, stop and ask.*
+
 Define environments and exact commands in `docs/operations.md`. Use `<shared>/templates/release-record.md` for each deployment or release operation. Apply only the sections relevant to that operation.
 
 ## Required before execution
@@ -8,7 +10,7 @@ Define environments and exact commands in `docs/operations.md`. Use `<shared>/te
 - Record the immutable artifact identifier, source revision, configuration revision, and required secrets by name. Do not put secret values in the plan.
 - Define prerequisites, execution order, health checks, observation period, failure thresholds, and recovery actions before deployment. Obtain agreement on consequential thresholds instead of inventing them.
 - State whether the operation changes data, schemas, infrastructure, permissions, external integrations, or user-visible behavior. Review applicable security, migration, and backup rules.
-- Define the operator, required access, approval scope, and any allowed automated recovery. Passing tests or acceptance of an increment does not itself authorize a production deployment.
+- Define the operator, required access, approval scope, and any allowed automated recovery. Passing tests or acceptance of a deliverable does not itself authorize a production deployment.
 - Use authorization already provided for the exact operation, artifact, environment, and recovery scope. Request a decision only when that scope is absent, changed, expired, or unclear.
 
 ## Required execution and evidence

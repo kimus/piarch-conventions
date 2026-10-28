@@ -1,6 +1,6 @@
 # Environment and design conventions
 
-Before approving the baseline, document the environment needed to achieve and verify it. Unknown decisions that affect behavior or feasibility are blockers. Deferrable choices can remain open with an owner and a point by which they must be resolved.
+Before approving the baseline, document the environment needed to achieve and verify it. Unknown decisions that affect behavior or feasibility are blockers. Deferrable choices can remain open with an owner and a point by which they must be resolved; an artifact that still lists one does not pass a gate.
 
 ## Required project definitions
 
@@ -24,4 +24,4 @@ For UI work, identify the intended users and critical journeys. Define layout an
 
 At each checkpoint, ask whether failures came from the spec, implementation, verifier, or environment. Propose a targeted change with its reason and a way to check it. Keep project lessons local. Promote reusable lessons to the shared conventions only after review.
 
-Do not modify global conventions, reusable skills, acceptance criteria, or tool permissions as an unannounced implementation fix. Project documentation can record observed facts; changes to the approved operating contract need review.
+Do not modify the shared system rules, reusable skills, acceptance criteria, or tool permissions as an unannounced implementation fix. Project documentation can record observed facts; changes to the approved operating contract need review. When an operational topic (backup, deployment, migration, release) matters to this environment and its rule set is not supplied, name it in the recorded Stack or Compatibility section or ask for it.

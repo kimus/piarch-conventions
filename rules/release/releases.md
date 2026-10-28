@@ -1,5 +1,7 @@
 # Release and versioning rules
 
+*Conditional rule set (topic: release). Supplied when the initiative's recorded Stack or Compatibility section names it; when it applies and was not supplied, stop and ask.*
+
 ## Required Semantic Versioning policy
 
 Use Semantic Versioning 2.0.0: `MAJOR.MINOR.PATCH`. Define the public compatibility contract in `conventions/project.md`. It can include APIs, CLI behavior, configuration, persisted formats, and other supported interfaces. An internal sprint number or change-record name is not a release version.
@@ -37,4 +39,4 @@ If a release is defective, use the approved rollback, forward fix, or package wi
 
 ## This conventions repository
 
-`VERSION` is the version source. `CHANGELOG.md` records changes. Updating local files prepares a candidate; it does not create a published release or Git tag. Projects reference the current shared source and reassess global changes at lifecycle checkpoints. Record the last assessed commit and content fingerprint; do not copy or pin global rules in each project.
+`VERSION` is the version source. `CHANGELOG.md` records changes. Updating local files prepares a candidate; it does not create a published release or Git tag. Projects reference the current shared source and reassess shared-source changes at lifecycle checkpoints. Record the last assessed commit and content fingerprint; do not copy the shared rules into each project.

@@ -1,5 +1,7 @@
 # Backup and restore rules
 
+*Conditional rule set (topic: backup). Supplied only when the initiative's recorded Stack or Compatibility section names it. When backup work matters and this set was not supplied, stop and ask for the topic; do not answer from memory.*
+
 Projects with persistent data must define recovery needs in `docs/operations.md`. A stateless project can mark data backup requirements Not applicable with a reason; identify any configuration or external state that still needs recovery.
 
 ## Required policy

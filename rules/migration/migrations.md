@@ -1,5 +1,7 @@
 # Migration rules
 
+*Conditional rule set (topic: migration). Supplied when the initiative's recorded Stack or Compatibility section names it; when it applies and was not supplied, stop and ask.*
+
 Apply these rules only when the state a change touches exists outside that working copy in a form the project does not fully control: a published release, another user, a deployed database, shared configuration, or data another system reads. Record project-specific tooling and procedures in `docs/operations.md`.
 
 Where no such state exists, change the format directly. Do not add migration files, compatibility readers, expand-and-contract staging, or rollback rehearsal for state that exists only to be replaced. Ask the user before writing any of it, once per change, before implementation. Do not assume compatibility is wanted, and do not assume it is unwanted.

@@ -15,22 +15,24 @@ Check these questions:
 - Are targets supported by the user, a source, or an approved decision?
 - Does the approach assume unavailable tools, data, services, or capabilities?
 - Do project, design, and change documents contradict each other?
-- Does the increment fit one meaningful user checkpoint?
+- Does the deliverable fit one meaningful user checkpoint?
 - Are UI states, accessibility, and visual references sufficient when applicable?
 - Are applicable security controls and denied-access scenarios specified?
 - Are deployment targets, authorization, health checks, and recovery triggers explicit?
 - Are migration compatibility, partial failure, backup freshness, and restore evidence adequate?
 - Does the proposed SemVer bump match the declared compatibility contract?
 
-Classify claims as User requirement, Observed fact, Approved decision, Assumption, or Unknown. Use direct source references for factual claims. Agreement between models is not evidence that a factual claim is true.
+The last three questions apply only where the matching topic rule set was supplied; otherwise record that it was not instead of answering from memory. A document over the size budgets in system/writing.md is an Advisory finding to re-cut it, never a reason to accept extra prose.
 
-For each finding, give an ID, location, evidence, consequence, and a correction or focused question. Mark a finding Blocking when it can change scope, correctness, acceptance, or a material decision. Mark it Advisory when it can safely wait. Do not invent findings to fill a quota.
+Classify claims with the provenance tags in system/writing.md; the tag is the whole classification. Use direct source references for factual claims. Agreement between models is not evidence that a factual claim is true.
+
+For each finding, give an ID, location, evidence, consequence, and a correction or focused question. Record findings in the review record, never inline in the reviewed artifact: a specification that cites a review verdict has absorbed a record it does not own. Mark a finding Blocking when it can change scope, correctness, acceptance, or a material decision. Mark it Advisory when it can safely wait. Do not invent findings to fill a quota.
 
 The author can draft responses and corrections. Only an actual independent review can close the review requirement. Keep the previous findings and their resolutions traceable. Do not have the author silently rewrite the reviewer's verdict.
 
 ## Outcome verification
 
-Use the approved contract as the reference. Verify requirements through tests, observed output, approved visual references, or a repeatable manual procedure. Check failures and boundary conditions that matter to the increment.
+Use the approved contract as the reference. Verify requirements through tests, observed output, approved visual references, or a repeatable manual procedure. Check failures and boundary conditions that matter to the deliverable.
 
 Record the command or procedure, input or fixture, expected result, actual result, and tested revision. For UI work, include relevant screenshots or other reviewable artifacts and the path to them. Keep credentials and personal data out of evidence. Where the owner authorized a phase without written records, state the same facts to the reviewer directly and name the revision reviewed; the reviewer must still learn what was not checked.
 
