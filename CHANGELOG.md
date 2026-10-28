@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0
+
+- A deliverable is one usable change to exactly one capability, created from the specification its delta produced. Its contract carries the acceptance criteria; its tasks are a plan and are never approved content, so re-cutting work cannot re-stale its own approval (D-27 in the consuming project).
+- G2 is the deliverable gate. `prompts/actions/review-increment.md` is replaced by `review-deliverable.md`: a project dispatching the old name must rename it, and the controller fails closed on the missing required prompt rather than sending an agent out with less instruction.
+- A capability is sliced into deliverables; an initiative does not have increments. `plan-default` names the capability and forbids a deliverable that spans two; `plan-delta` drafts a capability delta and states the specification revision it applies to.
+- `## Capabilities` is a required proposal section: the branches a proposal creates or grows, with what each makes usable. Proposals open with an H1 title, because listings show the title rather than the path.
+- New action `summarize-intent`: while a node has a specification, its idea is derived from it. `refine-idea` says so, so an agent no longer maintains two documents that can disagree.
+- Requirements belong in a capability delta and acceptance criteria in a deliverable contract; the proposal review stops demanding either.
+
 ## 0.3.0
 
 - Ideas and proposals carry a required `## Open Questions` section as their declared completeness state: one bullet per genuine question, or exactly `- none`. An absent or empty section is not completeness; the consuming controller refuses an idea revision that does not declare its state.

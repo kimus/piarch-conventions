@@ -20,11 +20,11 @@ Role prompts describe the agent's responsibilities. Action prompts describe a re
 
 - `global/`: governance, lifecycle, technical writing, security, review/verification, and relevant operational rules. A rule that applies only in some situations says so and names the situation; compatibility and migration rules apply only where state exists outside the working copy that the project does not control.
 - `prompts/roles/`: author and reviewer defaults.
-- `prompts/actions/`: refinement, proposal drafting, planning, gate-specific reviews, review output, and reconciliation. Proposal drafting and refinement require `## Stack` and `## Compatibility` sections, so a project records what it builds on and what a change may break.
+- `prompts/actions/`: refinement, intent summarising, proposal drafting, planning, gate-specific reviews, review output, and reconciliation. Proposal drafting and refinement require `## Stack` and `## Compatibility` sections, so a project records what it builds on and what a change may break.
 - `project-template/`: minimal project-local adoption instructions.
 - `templates/`: human-readable review and operational records.
 
-Only idea review (G0) is nontechnical. Proposal (G1) and increment (G2) reviews are fully technical. Reviewer verdicts, agent output, and files named approval are never human authorization. Actual tool restrictions, artifact validation, and approval gates remain controller responsibilities; editable Markdown is not a sandbox.
+Only idea review (G0) is nontechnical. Specification (G1), delta, and deliverable (G2) reviews are fully technical. Reviewer verdicts, agent output, and files named approval are never human authorization. Actual tool restrictions, artifact validation, and approval gates remain controller responsibilities; editable Markdown is not a sandbox.
 
 ## Maintain
 

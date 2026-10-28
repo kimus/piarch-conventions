@@ -1,1 +1,1 @@
-Derive the next small vertical slice from the proposal and already accepted living specs. Keep it within approved scope. Record missing decisions rather than assuming approval of future work.
+Derive the next deliverable of one capability from the proposal and the accepted specifications. Name the capability: a deliverable advances exactly one, and if the work spans two, split it into two deliverables - each one usable on its own. Keep it within approved scope. Record missing decisions rather than assuming approval of future work.

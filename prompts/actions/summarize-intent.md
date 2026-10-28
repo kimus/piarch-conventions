@@ -1,0 +1,1 @@
+Restate the current specification of this node as a short plain-language intent summary: what it is for and what it must do, in the reader's words. Do not add requirements, acceptance criteria, technology names, or open questions - this text is derived from the specification and is not a second source of truth. Preserve nothing the specification has dropped.
