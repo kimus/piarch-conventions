@@ -18,7 +18,7 @@ Role prompts describe the agent's responsibilities. Action prompts describe a re
 
 ## Contents
 
-- `system/`: the rules always supplied to every agent turn — governance, lifecycle, technical writing (including provenance tags and size budgets), environment, security, and review/verification. A rule that applies only in some situations says so and names the situation.
+- `system/`: the rules always supplied to every agent turn — governance, lifecycle, technical writing (including provenance tags and size budgets), environment, security, review/verification, and progress reporting (the fixed-column execution tree for multi-step work). A rule that applies only in some situations says so and names the situation.
 - `rules/<topic>/`: conditional operational rule sets (backup, deployment, migration, release). The controller supplies a topic only when its name appears, as a whole word, in the initiative's recorded `## Stack` or `## Compatibility` sections. Compatibility and migration work is asked about per change, never assumed; when a topic applies but was not supplied, an agent must stop and ask rather than answer from memory.
 - `prompts/roles/`: author and reviewer defaults.
 - `prompts/actions/`: refinement, intent summarising, proposal drafting, planning, gate-specific reviews, review output, and reconciliation. Proposal drafting and refinement require `## Stack` and `## Compatibility` sections, so a project records what it builds on and what a change may break.
